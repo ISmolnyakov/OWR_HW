@@ -1,5 +1,3 @@
-# file_obj = open("result.txt", 'rb', encoding='utf-8')
-
 class Files:
     def __init__(self, item):
         self.item = item
@@ -15,18 +13,18 @@ class Files:
         return self.count_lines() < other.count_lines()
 
     def write_file(self, other):
-        with open('new_result.txt', 'w', encoding='utf-8') as result, open(self.item, encoding='utf-8') as first, \
-                open(other.item, encoding='utf-8') as second:
-            if Files.__lt__:
-                result.write(f'{second.name}\n{other.count_lines()}\n{second.read()}\n')
-                result.write(f'\n')
-                result.write(f'{first.name}\n{self.count_lines()}\n{first.read()}\n')
+        with open('new_result.txt', 'w', encoding='utf-8') as result, open(self.item, encoding='utf-8') as first_file, \
+                open(other.item, encoding='utf-8') as second_file:
+            if Files.__gt__(self, other):
+                result.write(f'{second_file.name}\n{other.count_lines()}\n{second_file.read()}\n')
+                result.write(f'---------\n')
+                result.write(f'{first_file.name}\n{self.count_lines()}\n{first_file.read()}')
             else:
-                result.write(f'{first.name}\n{self.count_lines()}\n{first.read()}\n')
-                result.write(f'\n')
-                result.write(f'{second.name}\n{other.count_lines()}\n{second.read()}\n')
-            first.close()
-            second.close()
+                result.write(f'{first_file.name}\n{self.count_lines()}\n{first_file.read()}\n')
+                result.write(f'---------\n')
+                result.write(f'{second_file.name}\n{other.count_lines()}\n{second_file.read()}')
+            first_file.close()
+            second_file.close()
             result.close()
 
     # if file_one > file_two:
@@ -42,12 +40,11 @@ class Files:
 
 first = Files('1.txt')
 second = Files('2.txt')
-first.count_lines()
-second.count_lines()
-
-first.write_file(second)
+third = Files('3.txt')
+forth = Files('4.txt')
+# first.write_file(second)
+third.write_file(first)
 log = open('new_result.txt', encoding='utf-8')
-print(first.__gt__(second))
 print(log.read())
 
 # print(f"Number of lines in {first.file} {'>' if first.count_lines() > second.count_lines() else '<'} "
