@@ -1,0 +1,17 @@
+1.txt
+0
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='utf-8'>2.txt
+0
+<_io.TextIOWrapper name='2.txt' mode='r' encoding='utf-8'>1.txt
+0
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='utf-8'>2.txt
+0
+<_io.TextIOWrapper name='2.txt' mode='r' encoding='utf-8'>1.txt
+0
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='utf-8'>2.txt
+0
+<_io.TextIOWrapper name='2.txt' mode='r' encoding='utf-8'>1.txt
+0
+<_io.TextIOWrapper name='1.txt' mode='r' encoding='utf-8'>2.txt
+0
+<_io.TextIOWrapper name='2.txt' mode='r' encoding='utf-8'>
