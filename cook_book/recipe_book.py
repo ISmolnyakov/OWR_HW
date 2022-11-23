@@ -29,7 +29,7 @@ def get_shop_list_by_dishes(dishes: list, res, person_count=2):
     shop_list = {}
     for dish_name in dishes:
         for ingredient in cook_book.get(dish_name, []):
-            if ingredient['ingredient_name'] in cook_book:
+            if ingredient['ingredient_name'] in shop_list:
                 shop_list[ingredient['ingredient_name']]['quantity'] += int(ingredient['quantity']) * person_count
             else:
                 shop_list[ingredient['ingredient_name']] = {'quantity': int(ingredient['quantity']) * person_count, 'measure': ingredient['measure']}
