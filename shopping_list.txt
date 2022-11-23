@@ -1,0 +1,1 @@
+{'Яйцо': {'quantity': 4, 'measure': 'шт'}, 'Молоко': {'quantity': 200, 'measure': 'мл'}, 'Помидор': {'quantity': 4, 'measure': 'шт'}, 'Говядина': {'quantity': 1000, 'measure': 'г'}, 'Перец сладкий': {'quantity': 2, 'measure': 'шт'}, 'Лаваш': {'quantity': 4, 'measure': 'шт'}, 'Винный уксус': {'quantity': 2, 'measure': 'ст.л'}}
