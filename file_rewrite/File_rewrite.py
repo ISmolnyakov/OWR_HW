@@ -30,6 +30,7 @@ second = Files('2.txt')
 third = Files('3.txt')
 forth = Files('4.txt')
 first.write_file(forth)
+
 # third.write_file(first)
 # forth.write_file(second)
 log = open('new_result.txt', encoding='utf-8')
