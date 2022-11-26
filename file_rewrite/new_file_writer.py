@@ -23,14 +23,13 @@ def write_file(info):
         for items in info:
             result.write(f'{items[1]}\n{items[0]}\n') # вот тут получается в цикле нужно дописывать содержание текущего
                                                       # элемента списка, который в items, но как сделать в f-строке
-                                                      # прочитать содержимое файла?
+                                                      # прочитать содержимое файла? сделать items[1].read() ведь нельзя?
 
 
 sort_file_list(f_list)
 write_file(file_info)
 print(first.read()) #после выполнения функции sort_file_list(f_list) данный принт выводит пустую строку
                     #есть sort_file_list(f_list) убрать, то нормально выводится весть текст файла
-                    #
 
 print(file_info)
 log = open('resulting_file.txt', encoding='utf-8')
