@@ -25,7 +25,6 @@ def write_file(info):
                                                       # элемента списка, который в items, но как сделать в f-строке
                                                       # прочитать содержимое файла? сделать items[1].read() ведь нельзя?
 
-
 sort_file_list(f_list)
 write_file(file_info)
 print(first.read()) #после выполнения функции sort_file_list(f_list) данный принт выводит пустую строку
