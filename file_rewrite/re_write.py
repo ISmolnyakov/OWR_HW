@@ -4,9 +4,8 @@ path = '../file_rewrite'
 
 
 def rewrite_file(path):
-    file_list = os.listdir(path)
     info = {}
-    for content in file_list:
+    for content in os.listdir(path):
         if content.rfind('.txt', -4) >= 0:
             with open(os.path.join(path, content), 'r', encoding='utf-8') as file:
                 info[content] = file.readlines()
